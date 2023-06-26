@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MediaPlayer.src.Business.ServiceInterface;
 
 namespace MediaPlayer.src.Application
@@ -25,9 +21,11 @@ namespace MediaPlayer.src.Application
             _mediaService.DeleteFileById(id);
         }
 
-        public void GetAllFiles()
+        public bool GetAllFiles()
         {
             _mediaService.GetAllFiles();
+            System.Console.WriteLine("hi");
+            return true;
         }
 
         public void GetFileById(int id)
