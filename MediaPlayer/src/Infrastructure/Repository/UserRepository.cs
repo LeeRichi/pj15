@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MediaPlayer.src.Domain.Core;
 using MediaPlayer.src.Domain.RepositoryInterface;
 
 namespace MediaPlayer.src.Infrastructure.Repository
@@ -13,17 +8,19 @@ namespace MediaPlayer.src.Infrastructure.Repository
 
         public void AddNewList(string name, int userId)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Name is added: " + name + ", and the ID is: " + userId);
+            // throw new NotImplementedException();
         }
 
         public void EmptyOneList(int listId, int userId)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public void GetAllList(int userId)
         {
-            throw new NotImplementedException();
+            System.Console.WriteLine();
+            // throw new NotImplementedException();
         }
 
         public void GetListById(int listId)

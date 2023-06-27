@@ -22,10 +22,7 @@ internal class Program
         var playListController = new PlayListController(playListService);
 
         /* command-line interface should be here. All the methods should be used from class controllers only */
-
-        // System.Console.WriteLine(mediaController);
-        TimeSpan duration = new TimeSpan(hours: 1, minutes: 30, seconds: 0);
-
-        mediaRepository.CreateNewFile("rich", "dog", duration);
+        // userRepository.AddNewList("rich", 1);
+        userRepository.GetAllList(1);
     }
 }
